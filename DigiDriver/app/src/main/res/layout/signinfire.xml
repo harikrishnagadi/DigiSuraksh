@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <com.doctoror.particlesdrawable.ParticlesView
+        android:id="@+id/particlesView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dotColor="@android:color/white"
+        app:frameDelayMillis="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:lineColor="@android:color/white"
+        app:lineDistance="86dp"
+        app:lineThickness="1dp"
+        app:maxDotRadius="3dp"
+        app:minDotRadius="1dp"
+        app:numDots="60"
+        app:stepMultiplier="1" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/useranim"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="account_success.json" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_round_account_button_with_user_inside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/login"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="298dp"
+        android:layout_height="296dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/useranim"
+        app:layout_constraintVertical_bias="0.461"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="190dp">
+
+    </View>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="167dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:visibility="visible"
+        app:backgroundTint="@color/grey"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:srcCompat="@drawable/rightarrow"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:focusable="true" />
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/materialTextField"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mtf_animationDuration="1000"
+        app:mtf_backgroundColor="@color/white"
+        app:mtf_cardCollapsedHeight="3dp"
+        app:mtf_image="@drawable/ic_iconphone"
+        app:mtf_labelColor="@color/white"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+
+        <EditText
+            android:id="@+id/editTextphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="@string/phone_num"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="315dp" />
+
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/otpparenttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/editTextotp"
+        android:layout_width="253dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/otp"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonotp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="167dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:visibility="gone"
+        app:backgroundTint="@color/grey"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:srcCompat="@drawable/rightarrow"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" android:focusable="true" />
+
+    <Button
+        android:id="@+id/resendotp"
+        android:layout_width="101dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/grey"
+        android:elevation="6dp"
+        android:text="@string/Resend"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="253dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/stationame"
+        android:inputType="textNoSuggestions"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="253dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/regemail"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="167dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:visibility="gone"
+        app:backgroundTint="@color/grey"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:srcCompat="@drawable/rightarrow"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" android:focusable="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/regfloatingActionButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="167dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:visibility="gone"
+        app:backgroundTint="@color/grey"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:srcCompat="@drawable/rightarrow"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" android:focusable="true" />
+
+
+
+
+    <com.kofigyan.stateprogressbar.StateProgressBar
+        android:id="@+id/your_state_progress_bar_id"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/particlesView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        app:spb_animateToCurrentProgressState="true"
+        app:spb_animationDuration="2000"
+        app:spb_checkStateCompleted="true"
+        app:spb_currentStateDescriptionColor="@color/grey"
+        app:spb_currentStateNumber="one"
+        app:spb_maxStateNumber="three"
+        app:spb_stateBackgroundColor="@color/white"
+        app:spb_stateDescriptionColor="#808080"
+        app:spb_stateForegroundColor="@color/grey"
+        app:spb_stateNumberBackgroundColor="@color/black"
+        app:spb_stateNumberForegroundColor="@color/black" />
+
+
+</android.support.constraint.ConstraintLayout>

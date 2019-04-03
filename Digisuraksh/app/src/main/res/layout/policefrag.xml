@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/loginact"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="visible"
+        app:fabSize="normal"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/locationtrack"
+        app:srcCompat="@android:drawable/ic_menu_mylocation"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/locationtrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/black"
+        android:text="@string/track"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="720dp"
+        android:layout_height="18dp"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="8dp"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_fileName="loader1.json" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/policeimg"
+        android:src="@drawable/ic_police"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <TextView
+        android:id="@+id/track"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/blue"
+        android:text="@string/you_are_being_tracked_by_nearest_police"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:paddingStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="gone"/>
+    <include layout="@layout/diverlayout" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:id="@+id/bottomlayout"
+        android:visibility="gone"
+        android:background="@color/silver">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bottomanim"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="-8dp"
+            android:layout_marginTop="-30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_fileName="skeleton_frame_loading.json"
+            android:scaleType="matrix"
+            android:visibility="gone">
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+        <FrameLayout
+            android:id="@+id/driverdetailsbottomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/rounded_up_corners"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/ic_police"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/bottomlayouttextview"/>
+
+        </FrameLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

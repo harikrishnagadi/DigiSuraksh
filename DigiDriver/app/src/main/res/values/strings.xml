@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DigiDriver</string>
+    <string name="forgot_pass">Forgot password?</string>
+    <string name="phone_num">PHONE NUMBER</string>
+    <string name="password">PASSWORD</string>
+    <string name="confirmpass">CONFIRM PASSWORD</string>
+    <string name="login">Nice to see you Again!</string>
+    <string name="COUNTRY">Choose your country</string>
+    <string name="registerview"> SignUp here </string>
+    <string name="Username">USERNAME</string>
+    <string name="stationame">Station Name</string>
+    <string name="otp">ENTER OTP</string>
+    <string name="Shared_prefernce_filekey1">Com.Example.Locmod.Sharedprefilekey1</string>
+    <string name="Resend">RESEND </string>
+    <string name="Service">How you wanna serve</string>
+    <string name="ambpref">ambulance</string>
+    <string name="officername">Please enter your Name Officer</string>
+    <string name="firepref">fire</string>
+    <string name="email">Email</string>
+    <string name="select_your_age">Select your age</string>
+    <string name="policepref">police</string>
+    <string name="routing_service">http://utility.arcgis.com/usrsvcs/servers/68c5df581c6d4313b52bd41efa0c728e/rest/services/World/Route/NAServer/Route_World</string>
+    <string name="geocode_services">https://utility.arcgis.com/usrsvcs/servers/14b51a4865db4063a47eac3f2ff5f5f4/rest/services/World/GeocodeServer</string>
+</resources>

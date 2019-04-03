@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:lottie_fileName="account_success.json"
+        android:id="@+id/useranim"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.17000002"
+        app:lottie_autoPlay="false"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_round_account_button_with_user_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.17"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/user"
+        tools:ignore="ContentDescription"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:id="@+id/textView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="35dp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="298dp"
+        android:layout_height="296dp"
+        android:background="@color/grey"
+        android:id="@+id/view"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton"
+        android:layout_marginEnd="34dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="22dp"
+        app:layout_constraintTop_toBottomOf="@+id/useranim"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+    </View>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="21dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:backgroundTint="@color/black"
+        app:srcCompat="@drawable/rightarrow"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        android:layout_marginBottom="63dp"
+        android:onClick="onClick"
+        android:visibility="visible"
+        android:layout_marginRight="61dp"
+        tools:ignore="RtlHardcoded" />
+
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:mtf_animationDuration="1000"
+        app:mtf_cardCollapsedHeight="3dp"
+        app:mtf_labelColor="@color/white"
+        android:id="@+id/materialTextField"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:mtf_backgroundColor="@color/white"
+        app:mtf_image="@drawable/phone">
+
+
+
+        <EditText
+            android:id="@+id/editTextphone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="@string/phone_num"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="315dp" />
+
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <EditText
+        android:id="@+id/editTextotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/otp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536"
+        android:visibility="gone"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButtonotp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        app:backgroundTint="@color/black"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/rightarrow"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:visibility="gone"
+        android:layout_marginBottom="63dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <Button
+        android:id="@+id/resendotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Resend"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintVertical_bias="0.55"
+        android:background="@color/black"
+        android:elevation="6dp"
+        android:visibility="gone"/>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

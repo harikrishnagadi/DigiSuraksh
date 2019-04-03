@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">DigiSuraksh</string>
+    <string name="routing_service">http://utility.arcgis.com/usrsvcs/servers/a169744473304795b399409051a27287/rest/services/World/ClosestFacility/NAServer/ClosestFacility_World</string>
+    <string name="forgot_pass">Forgot password?</string>
+    <string name="phone_num">PHONE NUMBER</string>
+    <string name="password">PASSWORD</string>
+    <string name="confirmpass">CONFIRM PASSWORD</string>
+    <string name="login">Login!</string>
+    <string name="COUNTRY">Choose your country</string>
+    <string name="registerview"> SignUp here </string>
+    <string name="Username">Choose Username</string>
+    <string name="otp">Enter OTP</string>
+    <string name="Shared_prefernce_filekey">Com.Example.Locmod.Sharedprefilekey</string>
+    <string name="Resend">RESEND </string>
+    <string name="title_activity_main_app">MainApp</string>
+    <string name="drivername">""</string>
+    <string name="geocode_services">https://utility.arcgis.com/usrsvcs/servers/14b51a4865db4063a47eac3f2ff5f5f4/rest/services/World/GeocodeServer</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="confirmation">Confirm!</string>
+    <string name="condirmdialogtext">Are you sure want to confirm this request?</string>
+    <string name="YES">YES</string>
+    <string name="NO">NO</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="email">Email</string>
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mapmain">mapmain</string>
+    <string name="track">TRACK</string>
+    <string name="send_request">Request</string>
+    <string name="fireimage">fireimage</string>
+    <string name="policeimg">policeimage</string>
+    <string name="you_are_being_tracked_by_nearest_police">         You are being tracked By nearest Police</string>
+    <string name="finding_your_location">Finding your Location</string>
+    <string name="this_may_take_few_seconds">This may take few Seconds</string>
+    <string name="driverimage">driverimage</string>
+    <string name="slide_up">slide down</string>
+    <string name="imegaeview">imegaeview</string>
+    <string name="todo">TODO</string>
+    <string name="select_your_age">Select your Age</string>
+</resources>
